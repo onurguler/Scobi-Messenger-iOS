@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		CA40067D24CA3E25002D81F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40067C24CA3E25002D81F2 /* AppDelegate.swift */; };
 		CA40067F24CA3E25002D81F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40067E24CA3E25002D81F2 /* SceneDelegate.swift */; };
-		CA40068124CA3E25002D81F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40068024CA3E25002D81F2 /* ViewController.swift */; };
-		CA40068424CA3E25002D81F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA40068224CA3E25002D81F2 /* Main.storyboard */; };
+		CA40068124CA3E25002D81F2 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40068024CA3E25002D81F2 /* ConversationsViewController.swift */; };
+		CA40068424CA3E25002D81F2 /* Conversations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA40068224CA3E25002D81F2 /* Conversations.storyboard */; };
 		CA40068624CA3E29002D81F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA40068524CA3E29002D81F2 /* Assets.xcassets */; };
 		CA40068924CA3E29002D81F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA40068724CA3E29002D81F2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA40067924CA3E25002D81F2 /* Scobi-Messenger-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scobi-Messenger-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA40067924CA3E25002D81F2 /* Scobi Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scobi Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA40067C24CA3E25002D81F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA40067E24CA3E25002D81F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA40068024CA3E25002D81F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA40068324CA3E25002D81F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA40068024CA3E25002D81F2 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		CA40068324CA3E25002D81F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Conversations.storyboard; sourceTree = "<group>"; };
 		CA40068524CA3E29002D81F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA40068824CA3E29002D81F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA40068A24CA3E29002D81F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		CA40067A24CA3E25002D81F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA40067924CA3E25002D81F2 /* Scobi-Messenger-iOS.app */,
+				CA40067924CA3E25002D81F2 /* Scobi Messenger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +56,79 @@
 		CA40067B24CA3E25002D81F2 /* Scobi-Messenger-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CA40067C24CA3E25002D81F2 /* AppDelegate.swift */,
-				CA40067E24CA3E25002D81F2 /* SceneDelegate.swift */,
-				CA40068024CA3E25002D81F2 /* ViewController.swift */,
-				CA40068224CA3E25002D81F2 /* Main.storyboard */,
-				CA40068524CA3E29002D81F2 /* Assets.xcassets */,
-				CA40068724CA3E29002D81F2 /* LaunchScreen.storyboard */,
+				CA40069024CA3FCF002D81F2 /* Application */,
+				CA40069724CA40E9002D81F2 /* Constants */,
+				CA40069624CA40E0002D81F2 /* Extensions */,
+				CA40069524CA40D2002D81F2 /* Resources */,
+				CA40069124CA3FDC002D81F2 /* Models */,
+				CA40069224CA3FE5002D81F2 /* Views */,
+				CA40069424CA4000002D81F2 /* Controllers */,
 				CA40068A24CA3E29002D81F2 /* Info.plist */,
 			);
 			path = "Scobi-Messenger-iOS";
+			sourceTree = "<group>";
+		};
+		CA40069024CA3FCF002D81F2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CA40067C24CA3E25002D81F2 /* AppDelegate.swift */,
+				CA40067E24CA3E25002D81F2 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CA40069124CA3FDC002D81F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA40069224CA3FE5002D81F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA40069324CA3FEC002D81F2 /* Storyboards */,
+				CA40068524CA3E29002D81F2 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA40069324CA3FEC002D81F2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA40068224CA3E25002D81F2 /* Conversations.storyboard */,
+				CA40068724CA3E29002D81F2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CA40069424CA4000002D81F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA40068024CA3E25002D81F2 /* ConversationsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CA40069524CA40D2002D81F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA40069624CA40E0002D81F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA40069724CA40E9002D81F2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +148,7 @@
 			);
 			name = "Scobi-Messenger-iOS";
 			productName = "Scobi-Messenger-iOS";
-			productReference = CA40067924CA3E25002D81F2 /* Scobi-Messenger-iOS.app */;
+			productReference = CA40067924CA3E25002D81F2 /* Scobi Messenger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +191,7 @@
 			files = (
 				CA40068924CA3E29002D81F2 /* LaunchScreen.storyboard in Resources */,
 				CA40068624CA3E29002D81F2 /* Assets.xcassets in Resources */,
-				CA40068424CA3E25002D81F2 /* Main.storyboard in Resources */,
+				CA40068424CA3E25002D81F2 /* Conversations.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA40068124CA3E25002D81F2 /* ViewController.swift in Sources */,
+				CA40068124CA3E25002D81F2 /* ConversationsViewController.swift in Sources */,
 				CA40067D24CA3E25002D81F2 /* AppDelegate.swift in Sources */,
 				CA40067F24CA3E25002D81F2 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,12 +211,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA40068224CA3E25002D81F2 /* Main.storyboard */ = {
+		CA40068224CA3E25002D81F2 /* Conversations.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CA40068324CA3E25002D81F2 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Conversations.storyboard;
 			sourceTree = "<group>";
 		};
 		CA40068724CA3E29002D81F2 /* LaunchScreen.storyboard */ = {
@@ -290,8 +354,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.designx.Scobi-Messenger-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.designx.scobimessenger;
+				PRODUCT_NAME = "Scobi Messenger";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,8 +371,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.designx.Scobi-Messenger-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.designx.scobimessenger;
+				PRODUCT_NAME = "Scobi Messenger";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
