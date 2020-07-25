@@ -1,15 +1,15 @@
 //
-//  SignInViewController.swift
+//  SignUpViewController.swift
 //  Scobi-Messenger-iOS
 //
-//  Created by Onur Osman Güler on 24.07.2020.
+//  Created by Onur Osman Güler on 25.07.2020.
 //  Copyright © 2020 Design X. All rights reserved.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
-    
+class SignUpViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

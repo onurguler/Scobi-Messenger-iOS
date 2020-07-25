@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		688A53E5C25EB1EA4AC781E0 /* Pods_Scobi_Messenger_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B928DA7195514EDC7D80DF /* Pods_Scobi_Messenger_iOS.framework */; };
 		CA40067D24CA3E25002D81F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40067C24CA3E25002D81F2 /* AppDelegate.swift */; };
 		CA40067F24CA3E25002D81F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40067E24CA3E25002D81F2 /* SceneDelegate.swift */; };
 		CA40068124CA3E25002D81F2 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40068024CA3E25002D81F2 /* ConversationsViewController.swift */; };
@@ -14,9 +15,12 @@
 		CA40068624CA3E29002D81F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA40068524CA3E29002D81F2 /* Assets.xcassets */; };
 		CA40068924CA3E29002D81F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA40068724CA3E29002D81F2 /* LaunchScreen.storyboard */; };
 		CA40069B24CA4298002D81F2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40069A24CA4298002D81F2 /* SignInViewController.swift */; };
+		CA42E99E24CB8F9C003F266B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA42E99D24CB8F9C003F266B /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30B38476D2CAFED9FDC61DFD /* Pods-Scobi-Messenger-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scobi-Messenger-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Scobi-Messenger-iOS/Pods-Scobi-Messenger-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		41B928DA7195514EDC7D80DF /* Pods_Scobi_Messenger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scobi_Messenger_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA40067924CA3E25002D81F2 /* Scobi Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scobi Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA40067C24CA3E25002D81F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA40067E24CA3E25002D81F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		CA40068824CA3E29002D81F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA40068A24CA3E29002D81F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA40069A24CA4298002D81F2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CA42E99D24CB8F9C003F266B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EBCA4C3570FE63003AF2125E /* Pods-Scobi-Messenger-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scobi-Messenger-iOS.release.xcconfig"; path = "Target Support Files/Pods-Scobi-Messenger-iOS/Pods-Scobi-Messenger-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688A53E5C25EB1EA4AC781E0 /* Pods_Scobi_Messenger_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C4551B18F7B51A2E859473F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30B38476D2CAFED9FDC61DFD /* Pods-Scobi-Messenger-iOS.debug.xcconfig */,
+				EBCA4C3570FE63003AF2125E /* Pods-Scobi-Messenger-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CA40067024CA3E25002D81F2 = {
 			isa = PBXGroup;
 			children = (
 				CA40067B24CA3E25002D81F2 /* Scobi-Messenger-iOS */,
 				CA40067A24CA3E25002D81F2 /* Products */,
+				8C4551B18F7B51A2E859473F /* Pods */,
+				D6922E122BB51A20FC55F398 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +128,7 @@
 			children = (
 				CA40068024CA3E25002D81F2 /* ConversationsViewController.swift */,
 				CA40069A24CA4298002D81F2 /* SignInViewController.swift */,
+				CA42E99D24CB8F9C003F266B /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +154,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		D6922E122BB51A20FC55F398 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B928DA7195514EDC7D80DF /* Pods_Scobi_Messenger_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA40068D24CA3E29002D81F2 /* Build configuration list for PBXNativeTarget "Scobi-Messenger-iOS" */;
 			buildPhases = (
+				EE819205953E23E35902D8C3 /* [CP] Check Pods Manifest.lock */,
 				CA40067524CA3E25002D81F2 /* Sources */,
 				CA40067624CA3E25002D81F2 /* Frameworks */,
 				CA40067724CA3E25002D81F2 /* Resources */,
+				81A76FCDAC8E5445650CA444 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +230,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81A76FCDAC8E5445650CA444 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scobi-Messenger-iOS/Pods-Scobi-Messenger-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scobi-Messenger-iOS/Pods-Scobi-Messenger-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scobi-Messenger-iOS/Pods-Scobi-Messenger-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE819205953E23E35902D8C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scobi-Messenger-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA40067524CA3E25002D81F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -209,6 +281,7 @@
 				CA40068124CA3E25002D81F2 /* ConversationsViewController.swift in Sources */,
 				CA40067D24CA3E25002D81F2 /* AppDelegate.swift in Sources */,
 				CA40067F24CA3E25002D81F2 /* SceneDelegate.swift in Sources */,
+				CA42E99E24CB8F9C003F266B /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +423,7 @@
 		};
 		CA40068E24CA3E29002D81F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B38476D2CAFED9FDC61DFD /* Pods-Scobi-Messenger-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -367,6 +441,7 @@
 		};
 		CA40068F24CA3E29002D81F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCA4C3570FE63003AF2125E /* Pods-Scobi-Messenger-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
