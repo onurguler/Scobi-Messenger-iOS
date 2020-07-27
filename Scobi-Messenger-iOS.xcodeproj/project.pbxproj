@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		CA40068924CA3E29002D81F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA40068724CA3E29002D81F2 /* LaunchScreen.storyboard */; };
 		CA40069B24CA4298002D81F2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40069A24CA4298002D81F2 /* SignInViewController.swift */; };
 		CA42E99E24CB8F9C003F266B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA42E99D24CB8F9C003F266B /* SignUpViewController.swift */; };
+		CA5C12EE24CF34D400A07D7E /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C12ED24CF34D400A07D7E /* ConversationTableViewCell.swift */; };
+		CA5C12F024CF36CE00A07D7E /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C12EF24CF36CE00A07D7E /* UIView+Frame.swift */; };
+		CA6820DE24CC796F00CE31D3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6820DD24CC796F00CE31D3 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		CA40068A24CA3E29002D81F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA40069A24CA4298002D81F2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CA42E99D24CB8F9C003F266B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CA5C12ED24CF34D400A07D7E /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		CA5C12EF24CF36CE00A07D7E /* UIView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		CA6820DD24CC796F00CE31D3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EBCA4C3570FE63003AF2125E /* Pods-Scobi-Messenger-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scobi-Messenger-iOS.release.xcconfig"; path = "Target Support Files/Pods-Scobi-Messenger-iOS/Pods-Scobi-Messenger-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +58,6 @@
 				30B38476D2CAFED9FDC61DFD /* Pods-Scobi-Messenger-iOS.debug.xcconfig */,
 				EBCA4C3570FE63003AF2125E /* Pods-Scobi-Messenger-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,6 +115,7 @@
 			children = (
 				CA40069324CA3FEC002D81F2 /* Storyboards */,
 				CA40068524CA3E29002D81F2 /* Assets.xcassets */,
+				CA5C12ED24CF34D400A07D7E /* ConversationTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 		CA40069524CA40D2002D81F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CA6820DD24CC796F00CE31D3 /* APIService.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 		CA40069624CA40E0002D81F2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CA5C12EF24CF36CE00A07D7E /* UIView+Frame.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,7 +288,10 @@
 				CA40069B24CA4298002D81F2 /* SignInViewController.swift in Sources */,
 				CA40068124CA3E25002D81F2 /* ConversationsViewController.swift in Sources */,
 				CA40067D24CA3E25002D81F2 /* AppDelegate.swift in Sources */,
+				CA5C12EE24CF34D400A07D7E /* ConversationTableViewCell.swift in Sources */,
+				CA5C12F024CF36CE00A07D7E /* UIView+Frame.swift in Sources */,
 				CA40067F24CA3E25002D81F2 /* SceneDelegate.swift in Sources */,
+				CA6820DE24CC796F00CE31D3 /* APIService.swift in Sources */,
 				CA42E99E24CB8F9C003F266B /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
