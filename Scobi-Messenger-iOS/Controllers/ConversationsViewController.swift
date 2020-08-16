@@ -23,6 +23,14 @@ class ConversationsViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(tableView)
         
+        //        navigationItem.rightBarButtonItems = [
+        //            UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil),
+        //            UIBarButtonItem(image: UIImage(systemName: "person.circle"),
+        //                            style: .plain,
+        //                            target: self,
+        //                            action: nil)
+        //        ]
+        
         tableView.delegate = self
         tableView.dataSource = self
     }

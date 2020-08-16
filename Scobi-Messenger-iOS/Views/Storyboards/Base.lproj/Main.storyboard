@@ -10,7 +10,6 @@
         <!--Conversations-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ConversationsViewController" customModule="Scobi_Messenger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -18,10 +17,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Conversations" id="cAC-oF-kfW"/>
+                    <navigationItem key="navigationItem" title="Conversations" id="cAC-oF-kfW">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="compose" id="XoL-pe-Yg5">
+                                <connections>
+                                    <segue destination="OiQ-WM-TvX" kind="show" id="6qN-GT-EIo"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="person.crop.circle.fill" catalog="system" id="ZbH-SX-dTp">
+                                <connections>
+                                    <segue destination="Ibc-3w-K3h" kind="show" id="htN-mc-WxJ"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+            <point key="canvasLocation" x="1891" y="1565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AUw-IR-K88">
@@ -37,7 +50,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zr-ur-43W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="103"/>
+            <point key="canvasLocation" x="1890" y="806"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="fJ5-DC-BpW">
@@ -168,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06e-pz-dgt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="806"/>
+            <point key="canvasLocation" x="138" y="1565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kRJ-Ga-lBk">
@@ -327,7 +340,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AO7-zk-lyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821.7391304347827" y="805.58035714285711"/>
+            <point key="canvasLocation" x="1029" y="1565"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="4D6-Dr-hWa">
+            <objects>
+                <viewController id="Ibc-3w-K3h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nUx-Ly-3RG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="k6P-OX-mf5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="8Im-FQ-Xtx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K84-XK-EbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="2354"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="z5R-as-z7t">
+            <objects>
+                <viewController id="OiQ-WM-TvX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hd0-zM-ogy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GT5-W7-SBr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contacts" id="bHp-Kt-jWk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMX-gF-si2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2368" y="2354"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hm6-6w-Xnh">
@@ -467,10 +512,13 @@
                     <viewLayoutGuide key="safeArea" id="MeT-OE-M38"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="2586" y="806"/>
+            <point key="canvasLocation" x="3420" y="948"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="uuo-Zo-JQ8"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
